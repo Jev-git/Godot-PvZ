@@ -1,6 +1,6 @@
 # Doing
 * Plant a plant
-    * Click on icon at the top
+    * ~~Click on icon at the top~~
     * Hover on play field will create a preview
     * Click to plant
 # Wut dis?
