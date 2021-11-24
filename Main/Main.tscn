@@ -86,7 +86,9 @@ script = ExtResource( 5 )
 position = Vector2( 32, 96 )
 
 [node name="Portrait_Peashooter" parent="Portraits" instance=ExtResource( 4 )]
+m_iSunCost = 100
 
 [node name="Portrait_Sunflower" parent="Portraits" instance=ExtResource( 9 )]
 margin_top = 96.0
 margin_bottom = 160.0
+m_iSunCost = 50

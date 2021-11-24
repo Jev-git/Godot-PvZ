@@ -2,6 +2,7 @@ extends TileMap
 
 export var m_vBoardSize: Vector2 = Vector2(9, 5)
 
+onready var m_nSunlightCount: Node2D = get_tree().get_nodes_in_group("SunlightCount")[0]
 onready var m_nPlants: Node2D = $Plants
 
 onready var m_aabIsCellEmpty: Array
@@ -25,9 +26,10 @@ func is_cell_empty(_vCellPos: Vector2) -> bool:
 func get_cell_global_position(_vCellPos: Vector2):
 	return to_global(map_to_world(_vCellPos)) + cell_size / 2
 
-func plant(_psPlant: PackedScene, _vCellPos: Vector2):
-	if is_cell_empty(_vCellPos):
+func plant(_psPlant: PackedScene, _iSunCost: int, _vCellPos: Vector2):
+	if is_cell_empty(_vCellPos) and m_nSunlightCount.m_iSunCount >= _iSunCost:
 		var nPlant: Node2D = _psPlant.instance()
 		m_nPlants.add_child(nPlant)
 		nPlant.global_position = get_cell_global_position(_vCellPos)
 		m_aabIsCellEmpty[_vCellPos.x][_vCellPos.y] = false
+		m_nSunlightCount.use_sun(_iSunCost)

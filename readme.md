@@ -1,5 +1,5 @@
 # Doing
-* Plant using sunlight
+* Sunflowers produce sun
 # Wut dis?
 Plants vs zombies proto
 # Time frame
@@ -8,7 +8,7 @@ Plants vs zombies proto
 One complete level in which you can:
 * Sunflowers produce sun
 * Peashooters shoot peas
-* Plant plants using sunlight
+* ~~Plant plants using sunlight~~
 * Shovel plants
 * Spawn zombies as wave
 * Plants shoot zombies
