@@ -1,8 +1,8 @@
 # Doing
-* Plant a plant
-    * ~~Click on icon at the top~~
-    * Hover on play field will create a preview
-    * Click to plant
+* Sunlight
+    * Collect random sunlight
+    * Display sunlight amount
+    * Sunflower!!!
 # Wut dis?
 Plants vs zombies proto
 # Time frame
