@@ -1,0 +1,18 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Portrait/Portrait_Peashooter.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Sunflower.webp" type="Texture" id=2]
+[ext_resource path="res://Assets/Sunflower_Portrait_Selected.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Sunflower_Portrait.png" type="Texture" id=4]
+[ext_resource path="res://Plants/Sunflower.tscn" type="PackedScene" id=5]
+
+[node name="Portrait_Sunflower" instance=ExtResource( 1 )]
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 3 )
+m_psPlant = ExtResource( 5 )
+
+[node name="PreviewSpriteCursor" parent="." index="0"]
+texture = ExtResource( 2 )
+
+[node name="PreviewSpriteOnBoard" parent="." index="1"]
+texture = ExtResource( 2 )
