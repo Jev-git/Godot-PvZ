@@ -1,7 +1,7 @@
 # Doing
 * Sunlight
-    * Collect random sunlight
-    * Display sunlight amount
+    * ~~Collect random sunlight~~
+    * ~~Display sunlight amount~~
     * Sunflower!!!
 # Wut dis?
 Plants vs zombies proto
