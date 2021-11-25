@@ -1,12 +1,12 @@
 # Doing
-* Sunflowers produce sun
+* Peashootsers shoot peas
 # Wut dis?
 Plants vs zombies proto
 # Time frame
 2021/11/23 - 26.
 # MVP
 One complete level in which you can:
-* Sunflowers produce sun
+* ~~Sunflowers produce sun~~
 * Peashooters shoot peas
 * ~~Plant plants using sunlight~~
 * Shovel plants

@@ -1,7 +1,7 @@
 extends Area2D
 
-export var m_vMoveSpeed: float = 50
-export var m_vRotateSpeed: float = 15
+export var m_fMoveSpeed: float = 50
+export var m_fRotateSpeed: float = 15
 export var m_fCollectTime: float = 1
 
 onready var m_nSunlightCount: Node2D = get_tree().get_nodes_in_group("SunlightCount")[0]
@@ -16,8 +16,8 @@ func _ready():
 
 func _process(delta):
 	if !m_bIsCollected:
-		position.y += m_vMoveSpeed * delta
-		m_nSprite.rotation_degrees += m_vRotateSpeed * delta
+		position.y += m_fMoveSpeed * delta
+		m_nSprite.rotation_degrees += m_fRotateSpeed * delta
 
 func _input_event(viewport, event, shape_idx):
 	if !m_bIsCollected:

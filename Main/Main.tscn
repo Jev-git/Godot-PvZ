@@ -68,7 +68,6 @@ __meta__ = {
 position = Vector2( 192, 0 )
 script = ExtResource( 3 )
 m_psSunlight = ExtResource( 6 )
-m_vSpawnInterval = Vector2( 1, 3 )
 
 [node name="SpawnTimer" type="Timer" parent="SunlightSpawner"]
 one_shot = true

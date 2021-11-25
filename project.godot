@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "Plant",
+"language": "GDScript",
+"path": "res://Plants/Plant.gd"
+} ]
+_global_script_class_icons={
+"Plant": ""
+}
+
 [application]
 
 config/name="PvZ"
