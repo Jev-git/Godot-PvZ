@@ -1,5 +1,5 @@
 # Doing
-* Peashootsers shoot peas
+* Spawn zombie
 # Wut dis?
 Plants vs zombies proto
 # Time frame
@@ -7,10 +7,9 @@ Plants vs zombies proto
 # MVP
 One complete level in which you can:
 * ~~Sunflowers produce sun~~
-* Peashooters shoot peas
+* ~~Peashooters shoot peas~~
 * ~~Plant plants using sunlight~~
-* Shovel plants
-* Spawn zombies as wave
+* Spawn zombies randomly
 * Plants shoot zombies
 * Zombies eat plants
 * Win and lose condition
