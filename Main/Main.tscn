@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Assets/grass_1.png" type="Texture" id=1]
 [ext_resource path="res://Assets/grass_2.png" type="Texture" id=2]
@@ -9,6 +9,8 @@
 [ext_resource path="res://Assets/Sun.webp" type="Texture" id=7]
 [ext_resource path="res://Main/SunlightCount.gd" type="Script" id=8]
 [ext_resource path="res://Portrait/Portrait_Sunflower.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Main/ZombieSpawner.gd" type="Script" id=10]
+[ext_resource path="res://Zombie/Zombie.tscn" type="PackedScene" id=11]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Grass_1"
@@ -71,6 +73,31 @@ m_psSunlight = ExtResource( 6 )
 
 [node name="SpawnTimer" type="Timer" parent="SunlightSpawner"]
 one_shot = true
+
+[node name="ZombieSpawner" type="Node2D" parent="."]
+script = ExtResource( 10 )
+m_psZombie = ExtResource( 11 )
+
+[node name="SpawnTimer" type="Timer" parent="ZombieSpawner"]
+one_shot = true
+
+[node name="SpawnPos" type="Node2D" parent="ZombieSpawner"]
+position = Vector2( 32, 0 )
+
+[node name="Position2D" type="Position2D" parent="ZombieSpawner/SpawnPos"]
+position = Vector2( 736, 224 )
+
+[node name="Position2D2" type="Position2D" parent="ZombieSpawner/SpawnPos"]
+position = Vector2( 736, 288 )
+
+[node name="Position2D3" type="Position2D" parent="ZombieSpawner/SpawnPos"]
+position = Vector2( 736, 352 )
+
+[node name="Position2D4" type="Position2D" parent="ZombieSpawner/SpawnPos"]
+position = Vector2( 736, 416 )
+
+[node name="Position2D5" type="Position2D" parent="ZombieSpawner/SpawnPos"]
+position = Vector2( 736, 480 )
 
 [node name="Board" type="TileMap" parent="." groups=["Board"]]
 position = Vector2( 192, 192 )
