@@ -1,5 +1,5 @@
 # Doing
-* Peas damage zombies
+* Zombies eat plants
 # Wut dis?
 Plants vs zombies proto
 # Time frame
@@ -14,5 +14,5 @@ One complete level in which you can:
 * ~~Peashooters shoot peas~~
 * ~~Plant plants using sunlight~~
 * ~~Spawn zombies randomly~~
-* Plants shoot zombies
+* ~~Plants shoot zombies~~
 * Zombies eat plants

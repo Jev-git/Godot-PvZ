@@ -12,6 +12,7 @@ onready var m_nSprite: Sprite = $Sprite
 onready var m_nTween: Tween = $Tween
 
 func _ready():
+	connect("tree_exited", self, "_increase_sun_count")
 	m_nTween.connect("tween_completed", self, "_on_tween_completed")
 	m_nTween.interpolate_property(self, "position",
 			position, position - Vector2(0, m_fMoveDistance),
@@ -31,7 +32,6 @@ func _input_event(viewport, event, shape_idx):
 
 func _on_tween_completed(object: Object, key: NodePath):
 	if m_bIsCollected:
-		m_nSunlightCount.increase_sun_count()
 		queue_free()
 	else:
 		if m_bIsMovingUp:
@@ -40,3 +40,6 @@ func _on_tween_completed(object: Object, key: NodePath):
 					position, position + Vector2(0, m_fMoveDistance),
 					m_fMoveTime, Tween.TRANS_SINE, Tween.EASE_IN_OUT)
 			m_nTween.start()
+
+func _increase_sun_count():
+	m_nSunlightCount.increase_sun_count()

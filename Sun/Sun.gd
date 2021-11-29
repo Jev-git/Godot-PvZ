@@ -11,8 +11,9 @@ onready var m_nSprite: Sprite = $Sprite
 onready var m_nTween: Tween = $Tween
 
 func _ready():
+	connect("tree_exited", self, "_increase_sun_count")
 	$VisibilityNotifier2D.connect("screen_exited", self, "queue_free")
-	m_nTween.connect("tween_all_completed", self, "_on_tween_completed")
+	m_nTween.connect("tween_completed", self, "_on_tween_completed")
 
 func _process(delta):
 	if !m_bIsCollected:
@@ -29,6 +30,8 @@ func _input_event(viewport, event, shape_idx):
 						m_fCollectTime, Tween.TRANS_SINE, Tween.EASE_IN_OUT)
 				m_nTween.start()
 
-func _on_tween_completed():
-	m_nSunlightCount.increase_sun_count()
+func _on_tween_completed(object: Object, key: NodePath):
 	queue_free()
+
+func _increase_sun_count():
+	m_nSunlightCount.increase_sun_count()

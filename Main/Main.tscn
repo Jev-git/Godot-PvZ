@@ -82,7 +82,7 @@ m_psZombie = ExtResource( 11 )
 one_shot = true
 
 [node name="SpawnPos" type="Node2D" parent="ZombieSpawner"]
-position = Vector2( 32, 0 )
+position = Vector2( 32, 16 )
 
 [node name="Position2D" type="Position2D" parent="ZombieSpawner/SpawnPos"]
 position = Vector2( 736, 224 )
