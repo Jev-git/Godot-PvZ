@@ -1,9 +1,7 @@
-# Doing
-* Zombies eat plants
 # Wut dis?
 Plants vs zombies proto
 # Time frame
-2021/11/23 - 26.
+2021/11/23 - 29.
 # Collision layer
 * 1: plants
 * 2: projectiles
@@ -15,4 +13,4 @@ One complete level in which you can:
 * ~~Plant plants using sunlight~~
 * ~~Spawn zombies randomly~~
 * ~~Plants shoot zombies~~
-* Zombies eat plants
+* ~~Zombies eat plants~~

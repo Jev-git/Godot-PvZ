@@ -103,3 +103,6 @@ position = Vector2( 0, -18 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EatBox"]
 shape = SubResource( 7 )
+
+[node name="EatTimer" type="Timer" parent="."]
+one_shot = true
